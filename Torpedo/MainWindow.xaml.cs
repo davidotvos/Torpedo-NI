@@ -24,5 +24,10 @@ namespace Torpedo
         {
             InitializeComponent();
         }
+
+        private void OnEsc(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
