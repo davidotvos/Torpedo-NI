@@ -23,6 +23,7 @@ namespace Torpedo
         private bool _isSunk;
 
 
+
         public int Index
         {
             get { return _index; }
@@ -40,6 +41,26 @@ namespace Torpedo
             get { return _col; }
             set { SetProperty(ref _col, value); }
         }
+
+        public bool IsSea
+        {
+            get { return _isSea; }
+            set { SetProperty(ref _isSea, value); }
+        }
+
+        public bool IsHit
+        {
+            get { return _isHit; }
+            set { SetProperty(ref _isHit, value); }
+        }
+
+        public bool IsSunk
+        {
+            get { return _isSunk; }
+            set { SetProperty(ref _isSunk, value); }
+        }
+
+
 
     }
 }
