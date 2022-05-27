@@ -5,75 +5,92 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Torpedo"
         mc:Ignorable="d"
-        Title="Torpedo Game" Height="450" Width="800">
+        Title="Torpedo Game" Height="550" Width="800">
     <Grid>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
-            <RowDefinition Height="6*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="1.5*"/>
         </Grid.RowDefinitions>
-            
+        
+        <!-- 1. sor: escape, score , time -->
         <Grid Grid.Row="0">
-            <!-- 1. sor: escape, score , time -->
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="2*"/>
                 <ColumnDefinition Width="3*"/>
                 <ColumnDefinition Width="3*"/>
                 <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
+            <!-- 1.oszlop Escape gomb -->
             <Grid Grid.Column="0">
-                <!-- 1.oszlop Escape gomb -->
                 <Button Name="EscapeButton" Content="Esc" FontSize="36" FontFamily="Algerian" Background="Brown" Click="OnEsc"/>
             </Grid>
+            <!-- 2. oszlop Score(csak content)  -->
             <Grid Grid.Column="1" Background="Coral">
-                <!-- 2. oszlop Score(kiir)  -->
                 <Label Content="Score:" HorizontalAlignment="Right"  FontFamily="Algerian" FontSize="36" Margin="0,0,10,0"/>
             </Grid>
+            <!-- 2. oszlop ScoreLabel(pontok)  -->
             <Grid Grid.Column="2" Background="Coral">
-                <!-- 2. oszlop ScoreLabel(pontok)  -->
-                <Label Content="11" Name="ScoreLabel"  HorizontalAlignment="Left"  FontFamily="Goudy Stout" FontSize="36" Margin="10,0,0,0"/>
+                <Label Content="0" Name="ScoreLabel"  HorizontalAlignment="Left"  FontFamily="Goudy Stout" FontSize="36" Margin="10,0,0,0"/>
             </Grid>
+            <!-- 3.oszlop Time-->
             <Grid Grid.Column="3" Background="Brown">
                 <Label Name="TimeLabel" Content="01:30" FontSize="36" FontFamily="Algerian" HorizontalAlignment="Center"/>
-                <!-- 3.oszlop Time-->
             </Grid>
 
         </Grid>
-            <!-- 2. sor: Játékosnevek labelek -->
+        
+        <!-- 2. sor: Játékosnév és Turn labelek -->
         <Grid Grid.Row="1" Background="Coral">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
+            <!-- 1.oszlop Játékos neve-->
             <Grid Grid.Column="0">
-                <!-- 1.oszlop Játékos neve-->
-                <Label Content="PlayerField"  Name="PlayerNameLabel" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="36" FontFamily="Algerian" Background="DarkBlue" />
+                <Label Content="Player"  Name="PlayerNameLabel" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="36" FontFamily="Algerian" FontWeight="ExtraBold" Foreground="Blue"/>
             </Grid>
             <Grid Grid.Column="1">
-                <!-- 2.oszlop Ellenfél neve-->
-                <Label Content="EnemyField" Name="EnemyNameLabel" VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="36" FontFamily="Algerian" Background="DarkRed" />
+                <Label Content="Turn:"  VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0" FontSize="36" FontFamily="Algerian"  Foreground="Black"/>
+            </Grid>
+            <Grid Grid.Column="2">
+                <Label Content="0"  Name="TurnLabel" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" FontSize="36" FontFamily="Goudy Stout"  Foreground="Black"/>
+            </Grid>
+            <!-- 2.oszlop Ellenfél neve-->
+            <Grid Grid.Column="3">
+                <Label Content="Enemy" Name="EnemyNameLabel" VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="36" FontFamily="Algerian" FontWeight="ExtraBold" Foreground="DarkRed" />
             </Grid>
         </Grid>
-
-        <Grid Grid.Row="2">
-            <!-- 3.sor pályák-->
+        
+        <!-- 3.sor pályák-->
+        <Grid Grid.Row="2" Background="#FF0A92D4">
+            
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
-            <Grid Grid.Column="0">
-                <!-- 1. oszlop: A játékos pályája(ezzen vannak a hajói)-->
+            
+            <!-- 1. oszlop: A játékos pályája(ezzen vannak a hajói)-->
+            <Grid Grid.Column="0" >
+                <Border BorderBrush="Black" BorderThickness="5">
+                    
+                </Border>
             </Grid>
+            <!-- 2. oszlop: Az ellenfél pályája(erre kell lőni a játékosnak)-->
             <Grid Grid.Column="1">
-                <!-- 2. oszlop: Az ellenfél pályája(erre kell lőni a játékosnak-->
+                <Border BorderBrush="Black" BorderThickness="5">
+                    
+                </Border>
             </Grid>
         </Grid>
 
+        <!-- 4.sor gombok(next, satobbi)-->
         <Grid Grid.Row="3">
-            <!-- 4.sor gombok(next, satobbi)-->
-
+            
         </Grid>
 
     </Grid>
