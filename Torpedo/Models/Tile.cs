@@ -12,18 +12,11 @@ namespace Torpedo.Models
     public class Tile : BindableBase
     {
         // Tile koordináták
-        private int _index;
         private int _row;
         private int _col;
 
         // Tile státusza pl: Sea, Ship, Hit, Sunk
         private string _status = "Sea";
-
-        public int Index
-        {
-            get { return _index; }
-            set { SetProperty(ref _index, value); }
-        }
 
         public int Row
         {
@@ -45,6 +38,9 @@ namespace Torpedo.Models
 
         public static int CellSize { get { return 20; } }
 
-        
+        public static int getIndex(Tile t)
+        {
+            return t.Row * 10 + t.Col;
+        }
     }
 }

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Torpedo.Models;
+using System.Diagnostics;
 
 namespace Torpedo.ViewModels
 {
@@ -18,5 +19,7 @@ namespace Torpedo.ViewModels
             get { return _tiles; }
             set { SetProperty(ref _tiles, value); }
         }
+
+       
     }
 }
