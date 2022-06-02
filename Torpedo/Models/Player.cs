@@ -10,7 +10,7 @@ namespace Torpedo.Models
     public class Player : BindableBase
     {
         private string _name;
-        private int[] _moves;
+        private List<int> _moves;
         private List<Tile> _board;
         private int _score;
         private int _hits;
@@ -22,7 +22,7 @@ namespace Torpedo.Models
             set { SetProperty(ref _name, value); }
         }
 
-        public int[] Moves
+        public List<int> Moves
         {
             get { return _moves; }
             set { SetProperty(ref _moves, value); }
@@ -59,7 +59,7 @@ namespace Torpedo.Models
                 return false;
             }
 
-            _moves.Append(move);
+            _moves.Add(move);
             return true;
         }
     }
