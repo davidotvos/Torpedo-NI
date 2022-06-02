@@ -4,24 +4,16 @@
 winexe
 C#
 .cs
-C:\Coding\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\
+D:\c#\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\
 Torpedo
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-<<<<<<< HEAD
-C:\Coding\Torpedo-NI\Torpedo\App.xaml
-1-1644662438
-
-5-1457401624
-2031545550607
-=======
 D:\c#\Torpedo-NI\Torpedo\App.xaml
 1-1644662438
 
-5-1457401624
-203409996259
->>>>>>> c3a4b30e52e373870e39a39e0bf2eeaec2e7e308
+8261840642
+204-1301326568
 Views\MainWindow.xaml;
 
 False

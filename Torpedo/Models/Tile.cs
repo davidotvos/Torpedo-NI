@@ -42,26 +42,11 @@ namespace Torpedo.Models
             get { return _status; }
             set { SetProperty(ref _status, value); }
         }
-<<<<<<< HEAD
-       
-=======
 
-        public bool IsHit
-        {
-            get { return _isHit; }
-            set { SetProperty(ref _isHit, value); }
-        }
+        public static int CellWidth { get { return 33; } }
 
-        public bool IsSunk
-        {
-            get { return _isSunk; }
-            set { SetProperty(ref _isSunk, value); }
-        }
+        public static int CellHeight { get { return 29; } }
 
-        public static int CellSize { get { return 20; } }
 
-        
-
->>>>>>> c3a4b30e52e373870e39a39e0bf2eeaec2e7e308
     }
 }

@@ -1,24 +1,27 @@
 ﻿using Newtonsoft.Json;
+using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace Torpedo.Models
 {
-    public class Game
+    public class Game : BindableBase
     {
-        private List<Player> _players { get; set; }
+        private List<Player> _players = new List<Player>();
         private int _rounds { get; set; }
 
-
-        public static void saveGame(object obj, string filename)
+        public List<Player> Players
         {
-            var jsonString = JsonConvert.SerializeObject(obj, Formatting.Indented);
-
-            File.WriteAllText(filename, jsonString);
+            get { return _players; }
+            set { _players = value; }
         }
+
+
+        
     }
 }

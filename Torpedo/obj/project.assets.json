@@ -78,6 +78,15 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "Prism.Core/8.1.97": {
         "type": "package",
         "compile": {
@@ -186,6 +195,33 @@
         "tools/Install.ps1"
       ]
     },
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "Prism.Core/8.1.97": {
       "sha512": "EP5zrvWddw3eSq25Y7hHnDYdmLZEC2Z/gMrvmHzUuLbitmA1UaS7wQUlSwNr9Km8lzJNCvytFnaGBEFukHgoHg==",
       "type": "package",
@@ -243,24 +279,25 @@
     "net6.0-windows7.0": [
       "CommonServiceLocator >= 2.0.6",
       "Extended.Wpf.Toolkit >= 4.3.0",
+      "Newtonsoft.Json >= 13.0.1",
       "Prism.Core >= 8.1.97",
       "Prism.Wpf >= 8.1.97"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\D\\.nuget\\packages\\": {}
+    "C:\\Users\\vrudi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Coding\\Torpedo-NI\\Torpedo\\Torpedo.csproj",
+      "projectUniqueName": "D:\\c#\\Torpedo-NI\\Torpedo\\Torpedo.csproj",
       "projectName": "Torpedo",
-      "projectPath": "C:\\Coding\\Torpedo-NI\\Torpedo\\Torpedo.csproj",
-      "packagesPath": "C:\\Users\\D\\.nuget\\packages\\",
-      "outputPath": "C:\\Coding\\Torpedo-NI\\Torpedo\\obj\\",
+      "projectPath": "D:\\c#\\Torpedo-NI\\Torpedo\\Torpedo.csproj",
+      "packagesPath": "C:\\Users\\vrudi\\.nuget\\packages\\",
+      "outputPath": "D:\\c#\\Torpedo-NI\\Torpedo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\D\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vrudi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -293,6 +330,10 @@
           "Extended.Wpf.Toolkit": {
             "target": "Package",
             "version": "[4.3.0, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.1, )"
           },
           "Prism.Core": {
             "target": "Package",
