@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\c#\\Torpedo-NI\\Torpedo\\Torpedo.csproj": {}
+    "C:\\Coding\\Torpedo-NI\\Torpedo\\Torpedo.csproj": {}
   },
   "projects": {
-    "D:\\c#\\Torpedo-NI\\Torpedo\\Torpedo.csproj": {
+    "C:\\Coding\\Torpedo-NI\\Torpedo\\Torpedo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\c#\\Torpedo-NI\\Torpedo\\Torpedo.csproj",
+        "projectUniqueName": "C:\\Coding\\Torpedo-NI\\Torpedo\\Torpedo.csproj",
         "projectName": "Torpedo",
-        "projectPath": "D:\\c#\\Torpedo-NI\\Torpedo\\Torpedo.csproj",
-        "packagesPath": "C:\\Users\\vrudi\\.nuget\\packages\\",
-        "outputPath": "D:\\c#\\Torpedo-NI\\Torpedo\\obj\\",
+        "projectPath": "C:\\Coding\\Torpedo-NI\\Torpedo\\Torpedo.csproj",
+        "packagesPath": "C:\\Users\\D\\.nuget\\packages\\",
+        "outputPath": "C:\\Coding\\Torpedo-NI\\Torpedo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vrudi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\D\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

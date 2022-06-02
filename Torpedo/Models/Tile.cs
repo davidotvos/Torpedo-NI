@@ -8,21 +8,16 @@ using Prism.Mvvm;
 
 namespace Torpedo.Models
 {
+
     public class Tile : BindableBase
     {
-        // Tábla koordináták
+        // Tile koordináták
         private int _index;
         private int _row;
         private int _col;
 
-        // Üres Cella
-        private bool _isSea;
-
-        // Hajók állapotához
-        private bool _isHit;
-        private bool _isSunk;
-
-
+        // Tile státusza pl: Sea, Ship, Hit, Sunk
+        private string _status = "Sea";
 
         public int Index
         {
@@ -42,25 +37,11 @@ namespace Torpedo.Models
             set { SetProperty(ref _col, value); }
         }
 
-        public bool IsSea
+        public string Status
         {
-            get { return _isSea; }
-            set { SetProperty(ref _isSea, value); }
+            get { return _status; }
+            set { SetProperty(ref _status, value); }
         }
-
-        public bool IsHit
-        {
-            get { return _isHit; }
-            set { SetProperty(ref _isHit, value); }
-        }
-
-        public bool IsSunk
-        {
-            get { return _isSunk; }
-            set { SetProperty(ref _isSunk, value); }
-        }
-
-
-
+       
     }
 }
