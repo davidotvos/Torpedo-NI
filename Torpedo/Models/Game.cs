@@ -37,7 +37,7 @@ namespace Torpedo.Models
 
         public static string Fire(Player Current, Player Enemy, int idx)
         {
-            
+            return "Todo";
         }
 
         public static bool checkIfShipsCollide(Ship one, Ship two)
