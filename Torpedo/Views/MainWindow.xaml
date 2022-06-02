@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Torpedo"
         mc:Ignorable="d"
-        Title="Torpedo Game" Height="550" Width="800">
+        Title="Torpedo Game" Height="650" Width="800">
     <Grid>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="7*"/>
-            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="178"/>
         </Grid.RowDefinitions>
-        
+
         <!-- 1. sor: escape, score , time -->
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
@@ -41,7 +41,7 @@
             </Grid>
 
         </Grid>
-        
+
         <!-- 2. sor: Játékosnév és Turn labelek -->
         <Grid Grid.Row="1" Background="Coral">
             <Grid.ColumnDefinitions>
@@ -65,32 +65,55 @@
                 <Label Content="Enemy" Name="EnemyNameLabel" VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="36" FontFamily="Algerian" FontWeight="ExtraBold" Foreground="DarkRed" />
             </Grid>
         </Grid>
-        
+
         <!-- 3.sor pályák-->
         <Grid Grid.Row="2" Background="#FF0A92D4">
-            
+
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
-            
+
             <!-- 1. oszlop: A játékos pályája(ezzen vannak a hajói)-->
             <Grid Grid.Column="0" >
-                <Border BorderBrush="Black" BorderThickness="5">
-                    
-                </Border>
+                <Grid.Background>
+                    <ImageBrush ImageSource="/Images/board.jpg" Stretch="Fill"/>
+                </Grid.Background>
+                <Border BorderBrush="Black" BorderThickness="5"/>
+                <Grid HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="325" Width="364" Background="Blue" Margin="36,27,5,5">
+                    <ItemsControl>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </Grid>
             </Grid>
             <!-- 2. oszlop: Az ellenfél pályája(erre kell lőni a játékosnak)-->
             <Grid Grid.Column="1">
-                <Border BorderBrush="Black" BorderThickness="5">
-                    
-                </Border>
+                <Grid.Background>
+                    <ImageBrush ImageSource="/Images/board.jpg" Stretch="Fill"/>
+                </Grid.Background>
+                <Border BorderBrush="Black" BorderThickness="5"/>
+                <Grid HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="325" Width="364" Background="Blue" Margin="36,27,5,5">
+                    <ItemsControl>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Grid MinWidth="{Binding CellSize}" MinHeight="{Binding CellSize}" Background="AliceBlue">
+                                    
+                                </Grid>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </Grid>
+
             </Grid>
         </Grid>
 
         <!-- 4.sor gombok(next, satobbi)-->
         <Grid Grid.Row="3">
-            
+
         </Grid>
 
     </Grid>

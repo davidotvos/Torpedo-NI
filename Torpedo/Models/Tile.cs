@@ -60,7 +60,9 @@ namespace Torpedo.Models
             set { SetProperty(ref _isSunk, value); }
         }
 
+        public static int CellSize { get { return 20; } }
 
+        
 
     }
 }

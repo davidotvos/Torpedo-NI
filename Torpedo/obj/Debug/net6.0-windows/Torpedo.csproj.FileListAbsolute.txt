@@ -25,11 +25,9 @@ D:\c#\Torpedo-NI\Torpedo\bin\Debug\net6.0-windows\ru\Xceed.Wpf.AvalonDock.resour
 D:\c#\Torpedo-NI\Torpedo\bin\Debug\net6.0-windows\sv\Xceed.Wpf.AvalonDock.resources.dll
 D:\c#\Torpedo-NI\Torpedo\bin\Debug\net6.0-windows\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
 D:\c#\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\Torpedo.csproj.AssemblyReference.cache
-D:\c#\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\MainWindow.g.cs
 D:\c#\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\App.g.cs
 D:\c#\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\Torpedo_MarkupCompile.cache
 D:\c#\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\Torpedo_MarkupCompile.lref
-D:\c#\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\MainWindow.baml
 D:\c#\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\Torpedo.g.resources
 D:\c#\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\Torpedo.GeneratedMSBuildEditorConfig.editorconfig
 D:\c#\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\Torpedo.AssemblyInfoInputs.cache
@@ -41,3 +39,5 @@ D:\c#\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\refint\Torpedo.dll
 D:\c#\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\Torpedo.pdb
 D:\c#\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\Torpedo.genruntimeconfig.cache
 D:\c#\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\ref\Torpedo.dll
+D:\c#\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\Views\MainWindow.g.cs
+D:\c#\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\Views\MainWindow.baml
