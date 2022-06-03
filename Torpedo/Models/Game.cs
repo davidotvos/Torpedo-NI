@@ -34,6 +34,41 @@ namespace Torpedo.Models
             Trace.WriteLine(jsonString);
         }
 
+
+        // Ki nyerte a játékot
+        public static Player WhoWon(Game g)
+        {
+            if(!IsGameOver(g))
+            {
+                return null;
+            }
+
+            if (DidPlayerLost(g.Players[0]))
+            {
+                return g.Players[1];
+            }
+            else
+            {
+                return g.Players[0];
+            }
+        }
+
+
+        // Vége-e a játéknak
+        public static bool IsGameOver(Game g)
+        {
+            var p1 = g.Players[0];
+            var p2 = g.Players[1];
+
+            if(DidPlayerLost(p1) == true || DidPlayerLost(p2) == true)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+
         public static string Fire(Player Current, Player Enemy, int idx)
         {
             string result = "Miss";
@@ -69,6 +104,7 @@ namespace Torpedo.Models
             return result;
         }
 
+
         // Megnézi hogy egy hajó összes Tile-ja talált-e
         private static bool DidShipSink(Ship s)
         {
@@ -81,6 +117,8 @@ namespace Torpedo.Models
             }
             return true;
         }
+
+
         // Elsüllyeszti a hajót
         public static void SinkShip(Ship s)
         {
@@ -89,6 +127,7 @@ namespace Torpedo.Models
                 t.Status = "Sunk";
             }
         }
+
 
         public static bool CheckIfShipsCollide(Ship one, Ship two)
         {
@@ -105,6 +144,7 @@ namespace Torpedo.Models
             return false;
         }
 
+
         public static bool CheckIfTileIsShip(Ship s, Tile t)
         {
             foreach(Tile temp in s.Tiles)
@@ -115,6 +155,23 @@ namespace Torpedo.Models
                 }
             }
             return false;
+        }
+
+
+        // Ha elsüllyedt az összes hajója egy játékosnak veszített
+        public static bool DidPlayerLost(Player p)
+        {
+            var ships = p.Ships;
+
+            foreach(Ship s in ships)
+            {
+                if(!DidShipSink(s))
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
     }
 }
