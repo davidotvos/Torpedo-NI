@@ -16,6 +16,15 @@ namespace Torpedo.Models
         private int _hits = 0;
         private List<Ship> _ships;
 
+        public Player()
+        {
+            _moves = new List<int>();
+            _board = new List<Tile>();
+            _ships = new List<Ship>();
+            _name = "";
+
+
+        }
         public string Name
         {
             get { return _name; }

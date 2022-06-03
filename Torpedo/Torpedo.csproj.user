@@ -7,7 +7,11 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Update="Views\StartWindow.xaml.cs">
+=======
+    <Compile Update="Views\LidWindow.xaml.cs">
+>>>>>>> Rudidev
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -15,7 +19,11 @@
     <Page Update="Views\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+<<<<<<< HEAD
     <Page Update="Views\StartWindow.xaml">
+=======
+    <Page Update="Views\LidWindow.xaml">
+>>>>>>> Rudidev
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

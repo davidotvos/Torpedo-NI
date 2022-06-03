@@ -4,17 +4,26 @@
 winexe
 C#
 .cs
-C:\Coding\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\
+D:\c#\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\
 Torpedo
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+<<<<<<< HEAD
 C:\Coding\Torpedo-NI\Torpedo\App.xaml
 2-466429585
 
 91516202661
 204425573005
 Views\MainWindow.xaml;Views\StartWindow.xaml;
+=======
+D:\c#\Torpedo-NI\Torpedo\App.xaml
+2-1621767127
+
+91181045103
+204-1301326568
+Views\LidWindow.xaml;Views\MainWindow.xaml;
+>>>>>>> Rudidev
 
 False
 

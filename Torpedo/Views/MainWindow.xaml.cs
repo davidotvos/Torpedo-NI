@@ -29,7 +29,7 @@ namespace Torpedo
             InitializeComponent();
         }
 
-        private void OnEsc(object sender, RoutedEventArgs e)
+        private void EscapeButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
