@@ -1,4 +1,5 @@
-﻿using Prism.Mvvm;
+﻿using Prism.Commands;
+using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,18 @@ namespace Torpedo.ViewModels
     {
         private List<Tile> _tiles = new List<Tile>();
 
+       
+
         public MainWindowViewModel()
         {
+
+           
             InitialiseGameTiles();
+        }
+
+        private void Fire()
+        {
+            throw new NotImplementedException();
         }
 
         public List<Tile> Tiles
@@ -22,6 +32,8 @@ namespace Torpedo.ViewModels
             get { return _tiles; }
             set { SetProperty(ref _tiles, value); }
         }
+
+        
 
         private void InitialiseGameTiles()
         {

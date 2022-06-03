@@ -29,7 +29,7 @@
             </Grid.ColumnDefinitions>
             <!-- 1.oszlop Escape gomb -->
             <Grid Grid.Column="0">
-                <Button Name="EscapeButton" Content="Esc" FontSize="36" FontFamily="Algerian" Background="Brown" Click="OnEsc"/>
+                <Button Name="EscapeButton" Content="Esc" FontSize="36" FontFamily="Algerian" Background="Brown" Click="EscapeButton_Click" />
             </Grid>
             <!-- 2. oszlop Score(csak content)  -->
             <Grid Grid.Column="1" Background="Coral">
@@ -111,8 +111,18 @@
                     <ItemsControl ItemsSource="{Binding Tiles}" HorizontalAlignment="Left" VerticalAlignment="Bottom" >
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
-                                <Grid Width="{Binding CellWidth}" Height="{Binding CellHeight}" Margin="1,1,1,1" Background="Blue" >
-                                    
+                                <Grid Width="{Binding CellWidth}" Height="{Binding CellHeight}" Margin="1,1,1,1"  >
+                                    <Button Background="Blue">
+                                        <Button.Style>
+                                            <Style>
+                                                <Style.Triggers>
+                                                    <Trigger Property="Button.IsMouseOver" Value="True">
+                                                        <Setter Property="Button.Background" Value="Red" />
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Button.Style>
+                                    </Button>
                                 </Grid>
                             </DataTemplate>
                         </ItemsControl.ItemTemplate>

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\c#\Torpedo-NI\Torpedo\App.xaml
-1-1644662438
+2-1621767127
 
-8261840642
+91181045103
 204-1301326568
-Views\MainWindow.xaml;
+Views\LidWindow.xaml;Views\MainWindow.xaml;
 
 False
 

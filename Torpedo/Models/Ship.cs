@@ -9,9 +9,9 @@ namespace Torpedo.Models
 {
     public class Ship : BindableBase
     {
-        private string _name;
+        private string _name = "";
         private int _length;
-        private List<Tile> _tiles;
+        private List<Tile> _tiles = new List<Tile>();
 
 
         public List<Tile> Tiles

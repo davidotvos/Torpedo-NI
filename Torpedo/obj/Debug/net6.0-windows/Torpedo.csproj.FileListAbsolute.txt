@@ -43,3 +43,5 @@ D:\c#\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\Torpedo.pdb
 D:\c#\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\Torpedo.genruntimeconfig.cache
 D:\c#\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\ref\Torpedo.dll
 D:\c#\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\c#\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\Views\LidWindow.g.cs
+D:\c#\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\Views\LidWindow.baml
