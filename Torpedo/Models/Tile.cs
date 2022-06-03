@@ -35,21 +35,17 @@ namespace Torpedo.Models
             get { return _status; }
             set { SetProperty(ref _status, value); }
         }
-<<<<<<< HEAD
-=======
+
 
         public static int CellWidth { get { return 33; } }
 
         public static int CellHeight { get { return 29; } }
->>>>>>> Rudidev
 
 
-<<<<<<< HEAD
         public static int getIndex(Tile t)
         {
             return t.Row * 10 + t.Col;
         }
-=======
->>>>>>> Rudidev
+
     }
 }

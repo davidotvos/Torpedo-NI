@@ -92,13 +92,9 @@
                     <ItemsControl ItemsSource="{Binding Tiles}" HorizontalAlignment="Left" VerticalAlignment="Bottom" >
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
-<<<<<<< HEAD
-
-=======
                                 <Grid Width="{Binding CellWidth}" Height="{Binding CellHeight}" Margin="1,1,1,1" Background="Blue" >
 
                                 </Grid>
->>>>>>> Rudidev
                             </DataTemplate>
                         </ItemsControl.ItemTemplate>
                         <ItemsControl.ItemsPanel>
@@ -118,12 +114,8 @@
                 <Grid HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="325" Width="364" Background="Black" Margin="36,27,5,5" >
                     <ItemsControl ItemsSource="{Binding Tiles}" HorizontalAlignment="Left" VerticalAlignment="Bottom" >
                         <ItemsControl.ItemTemplate>
-                            <DataTemplate>
-<<<<<<< HEAD
-                                <Grid MinWidth="{Binding CellSize}" MinHeight="{Binding CellSize}" Background="AliceBlue">
-
-=======
-                                <Grid Width="{Binding CellWidth}" Height="{Binding CellHeight}" Margin="1,1,1,1"  >
+                        <DataTemplate>
+                            <Grid Width="{Binding CellWidth}" Height="{Binding CellHeight}" Margin="1,1,1,1"  >
                                     <Button Background="Blue">
                                         <Button.Style>
                                             <Style>
@@ -135,7 +127,6 @@
                                             </Style>
                                         </Button.Style>
                                     </Button>
->>>>>>> Rudidev
                                 </Grid>
                             </DataTemplate>
                         </ItemsControl.ItemTemplate>

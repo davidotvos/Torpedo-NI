@@ -93,7 +93,7 @@ namespace Torpedo {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Torpedo;V1.0.0.0;component/views/lidwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Torpedo;component/views/lidwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\LidWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

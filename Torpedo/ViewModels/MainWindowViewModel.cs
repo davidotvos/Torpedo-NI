@@ -34,33 +34,30 @@ namespace Torpedo.ViewModels
             set { SetProperty(ref _tiles, value); }
         }
 
-<<<<<<< HEAD
-       
-=======
+
         
 
         private void InitialiseGameTiles()
         {
             var tiles = new List<Tile>();
-            var index = 0;
-
+            
             for (var r = 0; r < 10; r++)
             {
                 for (var c = 0; c < 10; c++)
                 {
                     var tile = new Tile
                     {
-                        Index = index,
+                      
                         Row = r,
                         Col = c
                     };
                     tiles.Add(tile);
-                    index += 1;
+                    
                 }
             }
             Tiles = tiles;
         }
 
->>>>>>> Rudidev
+
     }
 }
