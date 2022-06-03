@@ -42,3 +42,5 @@ C:\Coding\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\refint\Torpedo.dll
 C:\Coding\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\Torpedo.pdb
 C:\Coding\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\Torpedo.genruntimeconfig.cache
 C:\Coding\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\ref\Torpedo.dll
+C:\Coding\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\Views\StartWindow.g.cs
+C:\Coding\Torpedo-NI\Torpedo\obj\Debug\net6.0-windows\Views\StartWindow.baml

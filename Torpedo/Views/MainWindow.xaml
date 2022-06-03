@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="Torpedo Game" Height="650" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="771*"/>
+            <ColumnDefinition Width="29*"/>
+        </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
@@ -16,7 +20,7 @@
         </Grid.RowDefinitions>
 
         <!-- 1. sor: escape, score , time -->
-        <Grid Grid.Row="0">
+        <Grid Grid.Row="0" Grid.ColumnSpan="2" Margin="0,0,0,50" Grid.RowSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="2*"/>
                 <ColumnDefinition Width="3*"/>
@@ -43,7 +47,7 @@
         </Grid>
 
         <!-- 2. sor: Játékosnév és Turn labelek -->
-        <Grid Grid.Row="1" Background="Coral">
+        <Grid Grid.Row="1" Background="Coral" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="2*"/>
                 <ColumnDefinition Width="1*"/>
@@ -67,7 +71,7 @@
         </Grid>
 
         <!-- 3.sor pályák-->
-        <Grid Grid.Row="2" Background="#FF0A92D4">
+        <Grid Grid.Row="1" Background="#FF0A92D4" Grid.ColumnSpan="2" Margin="0,50,0,0" Grid.RowSpan="2">
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
@@ -84,7 +88,7 @@
                     <ItemsControl>
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
-                                
+
                             </DataTemplate>
                         </ItemsControl.ItemTemplate>
                     </ItemsControl>
@@ -101,7 +105,7 @@
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
                                 <Grid MinWidth="{Binding CellSize}" MinHeight="{Binding CellSize}" Background="AliceBlue">
-                                    
+
                                 </Grid>
                             </DataTemplate>
                         </ItemsControl.ItemTemplate>
@@ -112,7 +116,7 @@
         </Grid>
 
         <!-- 4.sor gombok(next, satobbi)-->
-        <Grid Grid.Row="3">
+        <Grid Grid.Row="2" Grid.ColumnSpan="2" Margin="0,355,0,0" Grid.RowSpan="2">
 
         </Grid>
 
