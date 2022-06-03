@@ -31,6 +31,5 @@ namespace Torpedo.Models
             get { return _name; }
             set { SetProperty(ref _name, value); }
         }
-        
     }
 }
