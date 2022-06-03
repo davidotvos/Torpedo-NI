@@ -18,16 +18,15 @@ namespace Torpedo.Models
         public List<Player> Players
         {
             get { return _players; }
-            set { _players = value; }
+            set { SetProperty(ref _players, value); }
         }
 
         public int Rounds
         {
             get { return _rounds; }
-            set { _rounds = value; }
+            set { SetProperty(ref _rounds, value); }
         }
-
-
+        
         public static void saveGame(object obj, string filename)
         {
             var jsonString = JsonConvert.SerializeObject(obj, Formatting.Indented);
@@ -37,10 +36,61 @@ namespace Torpedo.Models
 
         public static string Fire(Player Current, Player Enemy, int idx)
         {
-            return "Todo";
+            string result = "Miss";
+            // Loop a ship listán
+            foreach (Ship s in Enemy.Ships)
+            {
+                // Loop az enemy ship tilejain
+                foreach (Tile t in s.Tiles)
+                {
+                    // Ha talált a lövés
+                    if (Tile.getIndex(t).Equals(idx))
+                    {
+                        t.Status = "Hit";
+                        result = "Hit";
+                        Current.Score += 10;
+                        Current.Hits += 1;
+
+                        // Ha talált-süllyedt
+                        if (DidShipSink(s))
+                        {
+                            SinkShip(s);
+                            result = "Sunk";
+                            Current.Score += 30;
+                        }
+                    }
+
+                    // Visszatér Hit-el vagy Sunk-al
+                    return result;
+                }
+            }
+
+            // Ellenkező esetben Miss-el
+            return result;
         }
 
-        public static bool checkIfShipsCollide(Ship one, Ship two)
+        // Megnézi hogy egy hajó összes Tile-ja talált-e
+        private static bool DidShipSink(Ship s)
+        {
+            foreach(Tile t in s.Tiles)
+            {
+                if(t.Status != "Hit")
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        // Elsüllyeszti a hajót
+        public static void SinkShip(Ship s)
+        {
+            foreach(Tile t in s.Tiles)
+            {
+                t.Status = "Sunk";
+            }
+        }
+
+        public static bool CheckIfShipsCollide(Ship one, Ship two)
         {
             foreach (Tile t in one.Tiles)
             {
@@ -55,7 +105,7 @@ namespace Torpedo.Models
             return false;
         }
 
-        public bool checkIfTileIsShip(Ship s, Tile t)
+        public static bool CheckIfTileIsShip(Ship s, Tile t)
         {
             foreach(Tile temp in s.Tiles)
             {
