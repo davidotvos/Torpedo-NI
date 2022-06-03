@@ -12,8 +12,8 @@ namespace Torpedo.Models
         private string _name;
         private List<int> _moves;
         private List<Tile> _board;
-        private int _score;
-        private int _hits;
+        private int _score = 0;
+        private int _hits = 0;
         private List<Ship> _ships;
 
         public string Name
@@ -28,7 +28,7 @@ namespace Torpedo.Models
             set { SetProperty(ref _moves, value); }
         }
 
-        public List<Tile> Boards 
+        public List<Tile> Board 
         { 
             get { return _board; }
             set { SetProperty(ref _board, value); }
